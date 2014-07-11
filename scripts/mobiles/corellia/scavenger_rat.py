@@ -45,5 +45,5 @@ def addTemplate(core):
 	mobileTemplate.setDefaultAttack('creatureMeleeAttack')
 	mobileTemplate.setAttacks(attacks)
 	
-	core.spawnService.addMobileTemplate('minor_gubbur', mobileTemplate)
+	core.spawnService.addMobileTemplate('scavenger_rat', mobileTemplate)
 	return

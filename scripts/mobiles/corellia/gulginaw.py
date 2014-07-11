@@ -28,10 +28,6 @@ def addTemplate(core):
 	mobileTemplate.setOptionsBitmask(Options.ATTACKABLE)
 	
 	templates = Vector()
-	attacks.add('bm_claw_2')
-	attacks.add('bm_damage_poison_2')
-	attacks.add('bm_slash_2')
-	attacks.add('bm_wing_buffet_2')
 	templates.add('object/mobile/shared_gulginaw.iff')
 	mobileTemplate.setTemplates(templates)
 	
@@ -41,6 +37,10 @@ def addTemplate(core):
 	mobileTemplate.setWeaponTemplateVector(weaponTemplates)
 	
 	attacks = Vector()
+	attacks.add('bm_claw_2')
+	attacks.add('bm_damage_poison_2')
+	attacks.add('bm_slash_2')
+	attacks.add('bm_wing_buffet_2')	
 	mobileTemplate.setDefaultAttack('creatureRangedAttack')
 	mobileTemplate.setAttacks(attacks)
 	

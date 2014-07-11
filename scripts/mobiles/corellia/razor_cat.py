@@ -45,5 +45,5 @@ def addTemplate(core):
 	mobileTemplate.setDefaultAttack('creatureMeleeAttack')
 	mobileTemplate.setAttacks(attacks)
 	
-	core.spawnService.addMobileTemplate('female_razor_cat', mobileTemplate)
+	core.spawnService.addMobileTemplate('razor_cat', mobileTemplate)
 	return
