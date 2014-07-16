@@ -10,8 +10,8 @@ from java.util import Vector
 def addTemplate(core):
 	mobileTemplate = MobileTemplate()
 	
-	mobileTemplate.setCreatureName('dwarf_bantha')
-	mobileTemplate.setLevel(18)
+	mobileTemplate.setCreatureName('bantha')
+	mobileTemplate.setLevel(8)
 	mobileTemplate.setDifficulty(Difficulty.NORMAL)
 
 	mobileTemplate.setMinSpawnDistance(4)
@@ -19,18 +19,17 @@ def addTemplate(core):
 	mobileTemplate.setDeathblow(False)
 	mobileTemplate.setScale(1)
 	mobileTemplate.setMeatType("Herbivore Meat")
-	mobileTemplate.setMeatAmount(300)
+	mobileTemplate.setMeatAmount(450)
 	mobileTemplate.setHideType("Wooly Hide")
-	mobileTemplate.setBoneAmount(200)	
-	mobileTemplate.setBoneType("Animal Bone")
-	mobileTemplate.setHideAmount(100)
+	mobileTemplate.setBoneAmount(250)
+	mobileTemplate.setBoneType("Animal Bones")
+	mobileTemplate.setHideAmount(325)
 	mobileTemplate.setSocialGroup("bantha")
-	mobileTemplate.setAssistRange(6)
+	mobileTemplate.setAssistRange(0)
 	mobileTemplate.setStalker(False)
-	mobileTemplate.setOptionsBitmask(Options.ATTACKABLE)	
 	
 	templates = Vector()
-	templates.add('object/mobile/shared_dwarf_bantha.iff')
+	templates.add('object/mobile/shared_bantha_hue.iff')
 	mobileTemplate.setTemplates(templates)
 
 	weaponTemplates = Vector()
@@ -39,12 +38,8 @@ def addTemplate(core):
 	mobileTemplate.setWeaponTemplateVector(weaponTemplates)
 	
 	attacks = Vector()
-	attacks.add('bm_bite_2')
-	attacks.add('bm_charge_2')
-	attacks.add('bm_dampen_pain_2')
-	attacks.add('bm_stomp_2')
 	mobileTemplate.setDefaultAttack('creatureMeleeAttack')
 	mobileTemplate.setAttacks(attacks)
 	
-	core.spawnService.addMobileTemplate('dwarf_bantha', mobileTemplate)
+	core.spawnService.addMobileTemplate('bantha_low', mobileTemplate)
 	return
